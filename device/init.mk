@@ -2,5 +2,7 @@
 PRODUCT_PACKAGES += \
     init.recovery.maple \
     init.maple \
-    fstab.maple \
     ueventd.maple
+
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/ramdisk/fstab.maple:root/fstab.maple
