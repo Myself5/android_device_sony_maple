@@ -122,6 +122,48 @@ lib64/hw/libdisplay.default.so:vendor/lib64/hw/libdisplay.default.so
 lib64/libsdm-disp-apis.so:vendor/lib64/libsdm-disp-apis.so
 lib64/libsys-utils-system.so
 
+# DRM
+etc/firmware/tzwidevine.b00
+etc/firmware/tzwidevine.b01
+etc/firmware/tzwidevine.b02
+etc/firmware/tzwidevine.b03
+etc/firmware/tzwidevine.b04
+etc/firmware/tzwidevine.b05
+etc/firmware/tzwidevine.b06
+etc/firmware/tzwidevine.b07
+etc/firmware/tzwidevine.mdt
+etc/firmware/tzwvcpybuf.b00
+etc/firmware/tzwvcpybuf.b01
+etc/firmware/tzwvcpybuf.b02
+etc/firmware/tzwvcpybuf.b03
+etc/firmware/tzwvcpybuf.b04
+etc/firmware/tzwvcpybuf.b05
+etc/firmware/tzwvcpybuf.b06
+etc/firmware/tzwvcpybuf.b07
+etc/firmware/tzwvcpybuf.mdt
+
+# DRM_HDCP
+etc/firmware/tzhdcp.b00
+etc/firmware/tzhdcp.b01
+etc/firmware/tzhdcp.b02
+etc/firmware/tzhdcp.b03
+etc/firmware/tzhdcp.b04
+etc/firmware/tzhdcp.b05
+etc/firmware/tzhdcp.b06
+etc/firmware/tzhdcp.b07
+etc/firmware/tzhdcp.mdt
+
+# FINGERPRINT
+etc/firmware/tzfingerprint.b00
+etc/firmware/tzfingerprint.b01
+etc/firmware/tzfingerprint.b02
+etc/firmware/tzfingerprint.b03
+etc/firmware/tzfingerprint.b04
+etc/firmware/tzfingerprint.b05
+etc/firmware/tzfingerprint.b06
+etc/firmware/tzfingerprint.b07
+etc/firmware/tzfingerprint.mdt
+
 # FRAMEWORK_DEPENDENCIES
 etc/permissions/com.sonyericsson.idd.xml
 etc/permissions/com.sonymobile.getmore.api.xml
@@ -213,6 +255,26 @@ lib64/vendor.qti.hardware.qteeconnector@1.0.so
 lib/vendor.qti.hardware.fm@1.0.so
 lib64/vendor.qti.hardware.fm@1.0.so
 
+# SECD
+etc/firmware/tzsuntory.b00
+etc/firmware/tzsuntory.b01
+etc/firmware/tzsuntory.b02
+etc/firmware/tzsuntory.b03
+etc/firmware/tzsuntory.b04
+etc/firmware/tzsuntory.b05
+etc/firmware/tzsuntory.b06
+etc/firmware/tzsuntory.b07
+etc/firmware/tzsuntory.mdt
+etc/firmware/tztpm.b00
+etc/firmware/tztpm.b01
+etc/firmware/tztpm.b02
+etc/firmware/tztpm.b03
+etc/firmware/tztpm.b04
+etc/firmware/tztpm.b05
+etc/firmware/tztpm.b06
+etc/firmware/tztpm.b07
+etc/firmware/tztpm.mdt
+
 # SEMC_DRM
 lib/vendor.semc.hardware.drm@1.0.so
 lib64/vendor.semc.hardware.drm@1.0.so
@@ -232,3 +294,14 @@ lib64/vendor.somc.hardware.miscta@1.0.so
 # TOF SENSOR
 lib/sensors.hal.tof.so
 lib64/sensors.hal.tof.so
+
+# TRIMAREA
+etc/firmware/tztpm.b00
+etc/firmware/tztpm.b01
+etc/firmware/tztpm.b02
+etc/firmware/tztpm.b03
+etc/firmware/tztpm.b04
+etc/firmware/tztpm.b05
+etc/firmware/tztpm.b06
+etc/firmware/tztpm.b07
+etc/firmware/tztpm.mdt
