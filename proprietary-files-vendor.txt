@@ -1117,7 +1117,7 @@ vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so
 
 # SECD
 vendor/bin/hw/vendor.semc.hardware.secd@1.0-service
-vendor/bin/secd|33073eaff6e0499d8700d32e000a9c06089d8506
+vendor/bin/secd|dc3fec15774fb73ea279f6cbe9a6167629f90e07
 vendor/etc/init/init.secd.rc|12ee81ee0ba3df1251d72228425f88d9edc9daeb
 vendor/etc/init/vendor.semc.hardware.secd@1.0-service.rc
 vendor/lib/libcredential-manager-service.so
