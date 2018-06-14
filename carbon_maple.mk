@@ -12,11 +12,12 @@ TARGET_SCREEN_WIDTH := 1080
 # vendor/lineage/config/common.mk
 TARGET_BOOTANIMATION_HALF_RES := true
 
-### LINEAGE
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+### Carbon
+$(call inherit-product, vendor/carbon/config/gsm.mk)
+$(call inherit-product, vendor/carbon/config/common.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_maple
+PRODUCT_NAME := carbon_maple
 PRODUCT_DEVICE := maple
 PRODUCT_BRAND := Sony
 PRODUCT_MODEL := G8141
@@ -26,10 +27,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=maple \
     BUILD_FINGERPRINT=Sony/maple/maple:8.0.0/OPR6.170623.013/1:user/dev-keys
 
-ifneq ($(LINEAGE_DEV_CERTIFICATE),)
-    PRODUCT_DEFAULT_DEV_CERTIFICATE := $(LINEAGE_DEV_CERTIFICATE)
-endif
-
-ifneq ($(LINEAGE_VERITY_CERTIFICATE),)
-    PRODUCT_VERITY_SIGNING_KEY := $(LINEAGE_VERITY_CERTIFICATE)
-endif
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.carbon.maintainer="Myself5"
