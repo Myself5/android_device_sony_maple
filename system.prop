@@ -77,7 +77,6 @@ ro.semc.version.sw_variant=GLOBAL-LTE4A
 ro.semc.version.sw_type=user
 
 # /system/build.prop
-ro.semc.product.model=G8341
 ro.semc.ms_type_id=PM-1054-BV
 ro.semc.version.fs=GENERIC
 ro.semc.version.fs_revision=47.2.A.10.107
