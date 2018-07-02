@@ -23,11 +23,7 @@ $(call inherit-product, vendor/carbon/config/common.mk)
 PRODUCT_NAME := carbon_poplar
 PRODUCT_DEVICE := poplar
 PRODUCT_BRAND := Sony
-PRODUCT_MODEL := G8341
 PRODUCT_MANUFACTURER := Sony
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=poplar \
-    PRIVATE_BUILD_DESC="G8341-user 9 47.2.A.11.228 3311891731 release-keys"
-
-BUILD_FINGERPRINT := Sony/G8341/G8341:9/47.2.A.11.228/3311891731:user/release-keys
+    PRODUCT_NAME=poplar

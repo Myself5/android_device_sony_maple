@@ -21,6 +21,10 @@ DEVICE_PATH := device/sony/poplar
 
 PRODUCT_PLATFORM := yoshino
 
+# Init
+TARGET_LIBINIT_YOSHINO_DEFINES_FILE := $(DEVICE_PATH)/init_poplar/init_poplar.cpp
+TARGET_UNIFIED_DEVICE := true
+
 ### BOOTLOADER
 TARGET_BOOTLOADER_BOARD_NAME := G8341
 
