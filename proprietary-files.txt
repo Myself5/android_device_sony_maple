@@ -186,6 +186,9 @@ etc/init/startup-logger.rc
 lib/vendor.semc.hardware.light@1.0.so
 lib64/vendor.semc.hardware.light@1.0.so
 
+# HotwordEnrollment
+-priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk
+
 # MODEM
 bin/sony-modem-switcher
 etc/customization/modem/amss_fs_empty.mbn
