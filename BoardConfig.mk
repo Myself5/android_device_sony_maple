@@ -15,25 +15,25 @@
 
 ### INHERIT FROM YOSHIRO
 include device/sony/yoshino-common/BoardConfigPlatform.mk
-include vendor/sony/poplar/BoardConfigVendor.mk
+include vendor/sony/maple/BoardConfigVendor.mk
 
-DEVICE_PATH := device/sony/poplar
+DEVICE_PATH := device/sony/maple
 
 PRODUCT_PLATFORM := yoshino
 
 # Init
 SOONG_CONFIG_NAMESPACES += SONY_YOSHINO_INIT
 SOONG_CONFIG_SONY_YOSHINO_INIT := EXTENSION
-SOONG_CONFIG_SONY_YOSHINO_INIT_EXTENSION := libinit.poplar
+SOONG_CONFIG_SONY_YOSHINO_INIT_EXTENSION := libinit.maple
 TARGET_UNIFIED_DEVICE := true
 
 ### BOOTLOADER
-TARGET_BOOTLOADER_BOARD_NAME := G8341
+TARGET_BOOTLOADER_BOARD_NAME := G8141
 
 ### KERNEL
-TARGET_KERNEL_CONFIG := lineage-msm8998-yoshino-poplar_defconfig
+TARGET_KERNEL_CONFIG := lineage-msm8998-yoshino-maple_defconfig
 
-BOARD_KERNEL_CMDLINE += androidboot.hardware=poplar
+BOARD_KERNEL_CMDLINE += androidboot.hardware=maple
 
 ### PARTITIONS
 # See also /proc/partitions on the device
@@ -45,11 +45,6 @@ BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 # Reserve space for data encryption (23753875456-16384)
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 23753859072
 
-# Build vendor.img
-BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
-TARGET_COPY_OUT_VENDOR := vendor
-BOARD_VENDORIMAGE_PARTITION_SIZE := 1610612736
-
 ### LIGHTS
 TARGET_PROVIDES_LIBLIGHT := true
 
@@ -58,9 +53,6 @@ BOARD_MODEM_CUSTOMIZATIONS := true
 
 ### IMS
 BOARD_IMS_CAMERA := true
-
-### VNDK
-BOARD_VNDK_VERSION := current
 
 ### SYSTEM PROPS
 # Add device-specific ones

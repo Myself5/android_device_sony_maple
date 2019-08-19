@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/carbon_poplar.mk
+    $(LOCAL_DIR)/carbon_maple.mk

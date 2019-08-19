@@ -15,9 +15,9 @@
 //
 
 cc_library_static {
-    name: "libinit.poplar",
+    name: "libinit.maple",
     recovery_available: true,
-    srcs: ["init_poplar.cpp"],
+    srcs: ["init_maple.cpp"],
     include_dirs: [
         "system/core/base/include",
         "system/core/init"
