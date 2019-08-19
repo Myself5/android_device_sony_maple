@@ -1,6 +1,6 @@
 ### DEVICE INIT
 PRODUCT_PACKAGES += \
-    init.recovery.poplar \
-    init.poplar \
-    fstab.poplar \
-    ueventd.poplar
+    init.recovery.maple \
+    init.maple \
+    fstab.maple \
+    ueventd.maple

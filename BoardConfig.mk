@@ -15,23 +15,23 @@
 
 ### INHERIT FROM YOSHIRO
 include device/sony/yoshino-common/BoardConfigPlatform.mk
-include vendor/sony/poplar/BoardConfigVendor.mk
+include vendor/sony/maple/BoardConfigVendor.mk
 
-DEVICE_PATH := device/sony/poplar
+DEVICE_PATH := device/sony/maple
 
 PRODUCT_PLATFORM := yoshino
 
 # Init
-TARGET_LIBINIT_YOSHINO_DEFINES_FILE := $(DEVICE_PATH)/init_poplar/init_poplar.cpp
+TARGET_LIBINIT_YOSHINO_DEFINES_FILE := $(DEVICE_PATH)/init_maple/init_maple.cpp
 TARGET_UNIFIED_DEVICE := true
 
 ### BOOTLOADER
-TARGET_BOOTLOADER_BOARD_NAME := G8341
+TARGET_BOOTLOADER_BOARD_NAME := G8141
 
 ### KERNEL
-TARGET_KERNEL_CONFIG := lineage-msm8998-yoshino-poplar_defconfig
+TARGET_KERNEL_CONFIG := lineage-msm8998-yoshino-maple_defconfig
 
-BOARD_KERNEL_CMDLINE += androidboot.hardware=poplar
+BOARD_KERNEL_CMDLINE += androidboot.hardware=maple
 
 ### PARTITIONS
 # See also /proc/partitions on the device
