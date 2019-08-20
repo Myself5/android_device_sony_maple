@@ -29,9 +29,8 @@
 #include "vendor_init.h"
 #include "property_service.h"
 
-#define LTALABEL_PATH "/dev/block/bootdevice/by-name/LTALabel"
-
 using android::init::property_set;
+using android::base::GetProperty;
 
 void property_override(char const prop[], char const value[])
 {
@@ -52,33 +51,20 @@ void property_override_dual(char const system_prop[], char const vendor_prop[], 
 
 void target_load_properties()
 {
-    std::string model;
-    if (std::ifstream file = std::ifstream(LTALABEL_PATH, std::ios::binary)) {
-        std::string str((std::istreambuf_iterator<char>(file)), std::istreambuf_iterator<char>());
-        size_t offset = str.find("Model: ");
 
-        if (offset != std::string::npos) {
-            model = str.substr(offset + 7, 5);
-        }
-    }
+    std::string model = GetProperty("ro.product.vendor.name", "");
 
     if (model == "G8342") {
-            property_set("persist.multisim.config", "dsds");
-            property_set("persist.radio.multisim.config", "dsds");
-            property_set("ro.telephony.default_network", "10,1");
-            property_set("ro.semc.product.model", "G8342");
+            property_override("persist.multisim.config", "dsds");
+            property_override("persist.radio.multisim.config", "dsds");
+            property_override("ro.semc.product.model", "G8342");
             property_override_dual("ro.product.model", "ro.vendor.product.model", "G8342");
             property_override_dual("ro.product.name", "ro.vendor.product.name", "poplar_dsds");
             property_override_dual("ro.product.device", "ro.vendor.product.device", "poplar_dsds");
-            property_override("ro.build.description", "G8342-user 9 47.2.A.10.107 3310712078 release-keys");
-            property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/G8342/G8342:9/47.2.A.10.107/3310712078:user/release-keys");
         } else {
-            property_set("ro.telephony.default_network", "10");
-            property_set("ro.semc.product.model", "G8341");
+            property_override("ro.semc.product.model", "G8341");
             property_override_dual("ro.product.model", "ro.vendor.product.model", "G8341");
             property_override_dual("ro.product.name", "ro.vendor.product.name", "poplar");
             property_override_dual("ro.product.device", "ro.vendor.product.device", "poplar");
-            property_override("ro.build.description", "G8341-user 9 47.2.A.10.107 3310712078 release-keys");
-            property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/G8341/G8341:9/47.2.A.10.107/3310712078:user/release-keys");
         }
 }
