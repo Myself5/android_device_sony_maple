@@ -70,15 +70,15 @@ void target_load_properties()
             property_override_dual("ro.product.model", "ro.vendor.product.model", "G8342");
             property_override_dual("ro.product.name", "ro.vendor.product.name", "poplar_dsds");
             property_override_dual("ro.product.device", "ro.vendor.product.device", "poplar_dsds");
-            property_override("ro.build.description", "poplar_dsds-user 9 YOSHINO-2.2.0-190725-0908 1 dev-keys");
-            property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/poplar_dsds/poplar_dsds:9/YOSHINO-2.2.0-190725-0908/1:user/dev-keys");
+            property_override("ro.build.description", "G8342-user 9 47.2.A.10.107 3310712078 release-keys");
+            property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/G8342/G8342:9/47.2.A.10.107/3310712078:user/release-keys");
         } else {
             property_set("ro.telephony.default_network", "10");
             property_set("ro.semc.product.model", "G8341");
             property_override_dual("ro.product.model", "ro.vendor.product.model", "G8341");
             property_override_dual("ro.product.name", "ro.vendor.product.name", "poplar");
             property_override_dual("ro.product.device", "ro.vendor.product.device", "poplar");
-            property_override("ro.build.description", "poplar-user 9 YOSHINO-2.2.0-190725-0908 1 dev-keys");
-            property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/poplar/poplar:9/YOSHINO-2.2.0-190725-0908/1:user/dev-keys");
+            property_override("ro.build.description", "G8341-user 9 47.2.A.10.107 3310712078 release-keys");
+            property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/G8341/G8341:9/47.2.A.10.107/3310712078:user/release-keys");
         }
 }
