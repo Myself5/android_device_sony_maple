@@ -5,4 +5,4 @@ PRODUCT_PACKAGES += \
     ueventd.maple
 
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/ramdisk/fstab.maple:root/fstab.maple
+    $(DEVICE_PATH)/ramdisk/fstab.maple:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.maple
