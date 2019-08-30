@@ -55,14 +55,18 @@ void target_load_properties()
     std::string model = GetProperty("ro.product.vendor.name", "");
 
     if (model == "G8342") {
+            property_override("ro.semc.product.model", "G8342");
             property_override("persist.multisim.config", "dsds");
             property_override("persist.radio.multisim.config", "dsds");
-            property_override("ro.semc.product.model", "G8342");
+            property_override("ro.telephony.default_network", "9,0");
+            property_override("persist.vendor.radio.block_allow_data", "0");
             property_override_dual("ro.product.model", "ro.vendor.product.model", "G8342");
             property_override_dual("ro.product.name", "ro.vendor.product.name", "poplar_dsds");
             property_override_dual("ro.product.device", "ro.vendor.product.device", "poplar_dsds");
         } else {
             property_override("ro.semc.product.model", "G8341");
+            property_override("ro.telephony.default_network", "9");
+            property_override("persist.vendor.radio.block_allow_data", "1");
             property_override_dual("ro.product.model", "ro.vendor.product.model", "G8341");
             property_override_dual("ro.product.name", "ro.vendor.product.name", "poplar");
             property_override_dual("ro.product.device", "ro.vendor.product.device", "poplar");
